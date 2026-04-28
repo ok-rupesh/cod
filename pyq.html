@@ -3,37 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>COD Study Guide — BCO009B | JECRC</title>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <title>COD Final Exam Guide</title>
+
+  <!-- React + ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel (to compile JSX) -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #06060e; }
-    #root { min-height: 100vh; }
-    #loading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      color: #22c55e;
-      font-family: monospace;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-  </style>
 </head>
 <body>
-  <div id="root">
-    <div id="loading">LOADING...</div>
-  </div>
 
-  <script type="text/babel" src="COD_FinalExamGuide.jsx" data-type="module"></script>
+  <!-- Root where your JSX will render -->
+  <div id="root"></div>
 
-  <script type="text/babel">
-    const container = document.getElementById('root');
-    const reactRoot = ReactDOM.createRoot(container);
-    reactRoot.render(<App />);
-  </script>
+  <!-- Your JSX file -->
+  <script type="text/babel" src="COD_FinalExamGuide.jsx"></script>
+
 </body>
 </html>
